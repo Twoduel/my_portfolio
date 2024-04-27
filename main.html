@@ -25,6 +25,11 @@
             width: 45%;
             height: 100%;
 
+            border-radius: 60px;
+            box-shadow: 0 10px 20px;
+            rgba(0, 0, 0, 0.19),
+            0 6px 6px rgba(0, 0, 0, 0.23);
+
             background-color: rgb(39, 102, 190);
         }
 
@@ -101,6 +106,7 @@
         .skills_ol_area {
             padding-left: 15%;
         }
+
         .skill_ol {
             display: flex;
         }
@@ -203,6 +209,16 @@
             height: 200px;
         }
     </style>
+
+    <script>
+        $("#emailcopy").click(async function () {
+
+            navigator.clipboard.writeText("sujung0619@naver.com").then(res => {
+                alert("이메일 주소가 복사되었습니다!");
+            })
+        }
+        )
+    </script>
 </head>
 
 <body>
@@ -305,13 +321,19 @@
                 </div>
             </div>
             <div class="footer">
-                <div class="footer-github" id="githubcopy"><img class=githubicon
-                        src="https://cdn-icons-png.flaticon.com/128/733/733609.png" class="" alt="..."> Github <span
-                        id="github"></span>
-                </div>
-                <div class="footer-blog" id="blogcopy" style="cursor: pointer;"><img class=blogicon
-                        src="https://cdn-icons-png.flaticon.com/128/49/49334.png" class="" alt="...">&nbsp;&nbsp;Blog <span id="blog"></span>
-                </div>
+                <a href="https://github.com/Twoduel" target="_blank">
+                    <div class="footer-github" id="githubcopy"><img class=githubicon
+                            src="https://cdn-icons-png.flaticon.com/128/733/733609.png" class="" alt="..."> Github <span
+                            id="github"></span>
+                    </div>
+                </a>
+                <a href="https://ddongttangcodding.tistory.com/" target="_blank">
+                    <div class="footer-blog" id="blogcopy" style="cursor: pointer;"><img class=blogicon
+                            src="https://cdn-icons-png.flaticon.com/128/49/49334.png" class=""
+                            alt="...">&nbsp;&nbsp;Blog
+                        <span id="blog"></span>
+                    </div>
+                </a>
                 <div class="footer-email" id="emailcopy" style="cursor: pointer;"><img class=emailicon
                         src="https://cdn-icons-png.flaticon.com/128/3178/3178158.png" class="" alt="..."> E-mail <span
                         id="email"></span>
