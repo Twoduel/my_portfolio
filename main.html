@@ -201,23 +201,43 @@
             padding-top: 8%;
         }
 
-        #card {
+        .card {
             position: relative;
             top: 0px;
             left: 12px;
 
-            margin-right: 12px;
+            
+        }
+
+        #card {
+            margin-left: 15%;
         }
 
         .col {
             width: 33.3%;
+            height: 450px;
+        }
+
+        /* .card-img-top {
+            width: 33.3%;
             height: 200px;
+        } */
+
+        .card_img {
+            height: 300px;
         }
 
         /* 모달 부분 */
         .project2_imgs {
             display: flex;
             margin-left: 140px;
+        }
+
+        .project2_img {
+            width: 200px;
+            height: 200px;
+            margin-right: 20px;
+            cursor: pointer;
         }
     </style>
 
@@ -368,7 +388,7 @@
                         <div class="col">
                             <div class="card" style="width: 18rem; cursor: pointer;" data-bs-toggle="modal"
                                 data-bs-target="#projectModal1">
-                                <img src="..." class="card-img-top" alt="...">
+                                <img class="card_img" src="..." class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <p class="card-text" style="color: rgb(48, 47, 46); text-align: center;">
                                         <strong>Spring Boot</strong>
@@ -379,7 +399,7 @@
                         <div class="col">
                             <div class="card" style="width: 18rem; cursor: pointer;" data-bs-toggle="modal"
                                 data-bs-target="#projectModal2">
-                                <img src="miniProject.png" class="card-img-top" alt="...">
+                                <img class="card_img" src="miniProject.png" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <p class="card-text" style="color: rgb(48, 47, 46); text-align: center;">
                                         <strong>HTML, CSS, JavaScript</strong>
@@ -390,7 +410,7 @@
                         <div class="col">
                             <div class="card" style="width: 18rem; cursor: pointer;" data-bs-toggle="modal"
                                 data-bs-target="#projectModal3">
-                                <img src="2team_introduce.png" class="card-img-top" alt="...">
+                                <img class="card_img" src="2team_introduce.png" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <p class="card-text" style="color: rgb(48, 47, 46); text-align: center;">
                                         <strong>HTML, CSS, JavaScript</strong>
@@ -479,17 +499,13 @@
                             HTML5, CSS, JavaScript<br>
                             와이어프레임 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                             <div class="project2_imgs">
-                                <img src="project2_img1.webp"
-                                    style="width: 200px; height: 200px; margin-right: 20px; cursor: pointer;"
-                                    data-bs-toggle="modal" data-bs-target="#project2_img1">
-                                <img src="project2_img2.webp"
-                                    style="width: 200px; height: 200px; margin-right: 20px; cursor: pointer;"
-                                    data-bs-toggle="modal" data-bs-target="#project2_img2">
-                                <img src="project2_img3.webp"
-                                    style="width: 200px; height: 200px; margin-right: 20px; cursor: pointer;"
-                                    data-bs-toggle="modal" data-bs-target="#project2_img3">
-                                <img src="project2_img4.webp"
-                                    style="width: 200px; height: 200px; cursor: pointer;" data-bs-toggle="modal"
+                                <img class="project2_img" src="project2_img1.webp" data-bs-toggle="modal"
+                                    data-bs-target="#project2_img1">
+                                <img class="project2_img" src="project2_img2.webp" data-bs-toggle="modal"
+                                    data-bs-target="#project2_img2">
+                                <img class="project2_img" src="project2_img3.webp" data-bs-toggle="modal"
+                                    data-bs-target="#project2_img3">
+                                <img class="project2_img" src="project2_img4.webp" data-bs-toggle="modal"
                                     data-bs-target="#project2_img4">
                             </div>
                             <br>
@@ -566,32 +582,28 @@
         <div class="modal fade" id="project2_img1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
                 <div class="modal-content">
-                    <img src="project2_img1.webp"
-                        data-bs-toggle="modal" data-bs-target="#project2_img1">
+                    <img src="project2_img1.webp" data-bs-toggle="modal" data-bs-target="#project2_img1">
                 </div>
             </div>
         </div>
         <div class="modal fade" id="project2_img2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
                 <div class="modal-content">
-                    <img src="project2_img2.webp"
-                        data-bs-toggle="modal" data-bs-target="#project2_img2">
+                    <img src="project2_img2.webp" data-bs-toggle="modal" data-bs-target="#project2_img2">
                 </div>
             </div>
         </div>
         <div class="modal fade" id="project2_img3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
                 <div class="modal-content">
-                    <img src="project2_img3.webp"
-                        data-bs-toggle="modal" data-bs-target="#project2_img3">
+                    <img src="project2_img3.webp" data-bs-toggle="modal" data-bs-target="#project2_img3">
                 </div>
             </div>
         </div>
         <div class="modal fade" id="project2_img4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
                 <div class="modal-content">
-                    <img src="project2_img4.webp"
-                        data-bs-target="#project2_img4">
+                    <img src="project2_img4.webp" data-bs-target="#project2_img4">
                 </div>
             </div>
         </div>
