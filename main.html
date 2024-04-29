@@ -213,6 +213,12 @@
             width: 33.3%;
             height: 200px;
         }
+
+        /* 모달 부분 */
+        .project2_imgs {
+            display: flex;
+            margin-left: 140px;
+        }
     </style>
 
     <script type="module">
@@ -406,25 +412,45 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body" style="display: block;">
-                        개발 기간 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 2023.04. &nbsp ~ &nbsp 2023.05.(1개월)<br>
-                        플랫폼 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Web<br>
-                        개발 인원 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 1명(개인프로젝트)<br>
-                        담당 역할 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ~<br>
+                        <strong>
+                            개발 기간 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 2023.04. &nbsp ~ &nbsp
+                            2023.05.(1개월)<br>
+                            플랫폼 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Web<br>
+                            개발 인원 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 1명(개인프로젝트)<br>
+                            담당 역할 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ~<br>
+                        </strong>
                     </div>
                     <div class="modal-body" style="display: block;">
                         <h5 style="margin-bottom: 15px;"><strong>개발 환경</strong></h5>
 
-                        언어 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Java(JDK 1.8)<br>
-                        서버 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Apache Tomcat 8.0<br>
-                        Framwork &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Spring Boot<br>
-                        DB &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  h2 DataBase<br>
-                        IDE &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  IntelliJ IDEA 2023<br>
-                        API &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  REST API<br>
+                        <strong>
+                            언어 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            Java(JDK 1.8)<br>
+                            서버 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            Apache
+                            Tomcat 8.0<br>
+                            Framwork &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Spring Boot<br>
+                            DB
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            h2 DataBase<br>
+                            IDE
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            IntelliJ IDEA 2023<br>
+                            API
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            REST API<br>
+                        </strong>
                     </div>
                     <div class="modal-footer" style="display: block;">
-                        프로젝트 시연 영상<br>
-                        프로젝트 url<br>
-                        Github url<br>
+                        <strong>프로젝트 시연 영상<br></strong>
+                        <strong>프로젝트 url<br></strong>
+                        <a class="modal-github" href="https://github.com/Twoduel/notice-board" target="_blank">
+                            <div class="modal-footer-github" id="githubcopy"
+                                style="color: rgb(41, 41, 41); text-decoration-line: none;"><img class=githubicon
+                                    src="https://cdn-icons-png.flaticon.com/128/733/733609.png" class="" alt="...">
+                                <strong> Github </strong><span id="github"></span>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -434,15 +460,57 @@
             <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                        <h3 class="modal-title fs-5" id="exampleModalLabel"><strong>카페 공유 커뮤니티</strong></h3>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body">
-                        ...
+                    <div class="modal-body" style="display: block;">
+                        <strong>
+                            개발 기간 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 2024.04.8 &nbsp ~ &nbsp
+                            2024.04.12(5일)<br>
+                            플랫폼 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Web<br>
+                            개발 인원 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 4명(팀원)<br>
+                            담당 역할 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 홈페이지 제작, 로그인 로직<br>
+                        </strong>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
+                    <div class="modal-body" style="display: block;">
+                        <h5 style="margin-bottom: 15px;"><strong>개발 환경</strong></h5>
+                        <strong>
+                            언어 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            HTML5, CSS, JavaScript<br>
+                            와이어프레임 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            <div class="project2_imgs">
+                                <img src="project2_img1.webp"
+                                    style="width: 200px; height: 200px; margin-right: 20px; cursor: pointer;"
+                                    data-bs-toggle="modal" data-bs-target="#project2_img1">
+                                <img src="project2_img2.webp"
+                                    style="width: 200px; height: 200px; margin-right: 20px; cursor: pointer;"
+                                    data-bs-toggle="modal" data-bs-target="#project2_img2">
+                                <img src="project2_img3.webp"
+                                    style="width: 200px; height: 200px; margin-right: 20px; cursor: pointer;"
+                                    data-bs-toggle="modal" data-bs-target="#project2_img3">
+                                <img src="project2_img4.webp"
+                                    style="width: 200px; height: 200px; cursor: pointer;" data-bs-toggle="modal"
+                                    data-bs-target="#project2_img4">
+                            </div>
+                            <br>
+                            DB
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            Firebase<br>
+                            EDITOR &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Visual Studio
+                            Code<br>
+                        </strong>
+                    </div>
+                    <div class="modal-footer" style="display: block;">
+                        <strong>프로젝트 시연 영상<br></strong>
+                        <strong>프로젝트 url<br></strong>
+                        <strong>팀 노션<br></strong>
+                        <a class="modal-github" href="https://github.com/Nellucia/Spart-10-miniProject" target="_blank">
+                            <div class="modal-footer-github" id="githubcopy"
+                                style="color: rgb(41, 41, 41); text-decoration-line: none;"><img class=githubicon
+                                    src="https://cdn-icons-png.flaticon.com/128/733/733609.png" class="" alt="...">
+                                <strong> Github </strong><span id="github"></span>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -452,16 +520,78 @@
             <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                        <h3 class="modal-title fs-5" id="exampleModalLabel"><strong>팀 소개 웹페이지</strong></h3>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body">
-                        ...
+                    <div class="modal-body" style="display: block;">
+                        <strong>
+                            개발 기간 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 2024.04.15 &nbsp ~ &nbsp
+                            2024.04.19(5일)<br>
+                            플랫폼 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Web<br>
+                            개발 인원 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 4명(팀장)<br>
+                            담당 역할 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ~<br>
+                        </strong>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
+                    <div class="modal-body" style="display: block;">
+                        <h5 style="margin-bottom: 15px;"><strong>개발 환경</strong></h5>
+
+                        <strong>
+                            언어 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            HTML5, CSS, JavaScript<br>
+                            와이어프레임 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Figma<br>
+                            DB
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            Firebase<br>
+                            EDITOR &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Visual Studio
+                            Code<br>
+                        </strong>
                     </div>
+                    <div class="modal-footer" style="display: block;">
+                        <strong>프로젝트 시연 영상<br></strong>
+                        <strong>프로젝트<br></strong>
+                        <strong>팀 노션<br></strong>
+                        <a class="modal-github" href="https://github.com/Twoduel/2team_introduce" target="_blank">
+                            <div class="modal-footer-github" id="githubcopy"
+                                style="color: rgb(41, 41, 41); text-decoration-line: none;"><img class=githubicon
+                                    src="https://cdn-icons-png.flaticon.com/128/733/733609.png" class="" alt="...">
+                                <strong> Github </strong><span id="github"></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Read Project2_imgs Modal -->
+        <div class="modal fade" id="project2_img1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <img src="project2_img1.webp"
+                        data-bs-toggle="modal" data-bs-target="#project2_img1">
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="project2_img2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <img src="project2_img2.webp"
+                        data-bs-toggle="modal" data-bs-target="#project2_img2">
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="project2_img3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <img src="project2_img3.webp"
+                        data-bs-toggle="modal" data-bs-target="#project2_img3">
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="project2_img4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <img src="project2_img4.webp"
+                        data-bs-target="#project2_img4">
                 </div>
             </div>
         </div>
