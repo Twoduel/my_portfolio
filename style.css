@@ -22,6 +22,12 @@ body {
     display: flex;
 }
 
+a {
+    color: black;
+    cursor: pointer;
+    text-decoration-line: none;
+}
+
 /* about부분 */
 .about {
     width: 45%;
@@ -252,4 +258,8 @@ li {
 
 .project2_img:hover {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19);
+}
+
+.video {
+    margin: 20px auto 30px 150px;
 }
